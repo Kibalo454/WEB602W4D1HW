@@ -1,0 +1,122 @@
+/* Mixins */
+/* ==========================
+   GLOBAL PAGE SETTINGS
+   ========================== */
+body.main-layout {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #ffffff;
+  color: #0a0506;
+  margin: 0;
+  padding: 0;
+}
+/* ==========================
+   TOP RED HEADER BAR
+   ========================== */
+.collection_text {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 26px 0;
+  background: #e63946;
+  color: #fff;
+  font-size: 36px;
+}
+/* ==========================
+   TITLE + SUBTEXT SECTION
+   ========================== */
+.about_main {
+  padding: 30px 0 10px;
+}
+.about_main .container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+.about_main .collection_section {
+  text-align: left;
+  margin-bottom: 25px;
+}
+.about_main .collection_section .new_text {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #000000;
+  margin: 0 0 6px;
+}
+.about_main .collection_section .consectetur_text {
+  color: #6c757d;
+  max-width: 700px;
+  margin: 6px 0 0;
+  line-height: 1.45;
+}
+/* ==========================
+   GRAY PRODUCT CARD SECTION
+   ========================== */
+.racing_shoes {
+  background: #f1f1f1;
+  padding: 32px 48px;
+  border-radius: 6px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  /* Image Left Column */
+  /* Sale Right Column */
+}
+.racing_shoes .col-md-8 {
+  flex: 0 0 65%;
+}
+.racing_shoes .shoes-img3 img {
+  max-width: 100%;
+  display: block;
+}
+.racing_shoes .col-md-4 {
+  flex: 0 0 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  gap: 10px;
+}
+.racing_shoes .sale_text {
+  font-size: 26px;
+  font-weight: 700;
+  color: #f4a261;
+  margin-bottom: 6px;
+}
+.racing_shoes .number_text {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.racing_shoes .seemore {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  width: 130px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 2px 0 #d21a28;
+}
+.racing_shoes .seemore:hover {
+  background: #df1c2b;
+}
+/* ==========================
+   FOOTER RED BAR
+   ========================== */
+.copyright {
+  background: #e63946;
+  color: #fff;
+  text-align: center;
+  padding: 14px 0;
+  margin-top: 24px;
+  font-size: 13px;
+}

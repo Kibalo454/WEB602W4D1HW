@@ -1,0 +1,12 @@
+{
+  "name": "web602w4d1hw",
+  "version": "1.0.0",
+  "description": "LESS build for Module3_week4_day1 Homework",
+  "scripts": {
+    "build": "lessc less/racing.less css/style.css",
+    "watch": "node watch.js"
+  },
+  "devDependencies": {
+    "less": "^4.1.4"
+  }
+}

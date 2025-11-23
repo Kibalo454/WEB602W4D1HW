@@ -1,0 +1,134 @@
+@import "colors.less";
+@import "fonts.less";
+
+/* ==========================
+   GLOBAL PAGE SETTINGS
+   ========================== */
+body.main-layout {
+  .body-font();
+  background: @bg;
+  color: @text;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========================
+   TOP RED HEADER BAR
+   ========================== */
+.collection_text {
+  .headings();
+  text-transform: uppercase;
+  text-align: center;
+  padding: 26px 0;
+  background: @primary;
+  color: #fff;
+  font-size: 36px;
+}
+
+/* ==========================
+   TITLE + SUBTEXT SECTION
+   ========================== */
+.about_main {
+  padding: 30px 0 10px;
+
+  .container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 15px;   // stays white like screenshot
+  }
+
+  .collection_section {
+    text-align: left;
+    margin-bottom: 25px;
+
+    .new_text {
+      .headings();
+      font-size: 26px;
+      color: darken(@text, 5%);
+      margin: 0 0 6px;
+    }
+
+    .consectetur_text {
+      color: @muted;
+      max-width: 700px;
+      margin: 6px 0 0;
+      line-height: 1.45;
+    }
+  }
+}
+
+/* ==========================
+   GRAY PRODUCT CARD SECTION
+   ========================== */
+.racing_shoes {
+  background: @card-bg;
+  padding: 32px 48px;
+  .rounded(6px);
+  margin-top: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+
+  /* Image Left Column */
+  .col-md-8 {
+    flex: 0 0 65%;
+  }
+
+  .shoes-img3 img {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* Sale Right Column */
+  .col-md-4 {
+    flex: 0 0 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    gap: 10px;
+  }
+
+  .sale_text {
+    font-size: 26px;
+    font-weight: 700;
+    color: @accent;
+    margin-bottom: 6px;
+  }
+
+  .number_text {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .seemore {
+    background: @primary;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    width: 130px;
+    text-align: center;
+    cursor: pointer;
+    .rounded(4px);
+    box-shadow: 0 2px 0 darken(@primary, 10%);
+
+    &:hover {
+      background: darken(@primary, 7%);
+    }
+  }
+}
+
+/* ==========================
+   FOOTER RED BAR
+   ========================== */
+.copyright {
+  background: @primary;
+  color: #fff;
+  text-align: center;
+  padding: 14px 0;
+  margin-top: 24px;
+  font-size: 13px;
+}
